@@ -1,0 +1,31 @@
+#KROK1
+#Utwórz klasę abstrakcyjną IPojazd reprezentującą ideę interfejsu (bez konstruktora,
+# zawierającą tylko metody abstrakcyjne), Wewnątrz tej klasy utwórz dwie motody abstrakcyjne:
+#1. pokaz_naped, 2.predkosc_max, klasę utwórz w nowym module o nazwie ipojazd.py
+
+#KROK2
+#Utwórz dwie zwykłe klasy,każda w osobnym module
+#klasa Silnik -> konstruktor(rodzaj,poj)
+#klasa Marka > konstruktor(nazwa,model,rocznik)
+
+
+#KROK3
+#Utwórz klasę Rower w nowym module, Rower(IPojazd,Marka)
+#obowiązkowo zaimplementuj metody z IPojzad, metoda pokaz_napęd ma zwracać opis: "korba"
+#metoda predkosc_max ma zwracać wartość 60
+#stwórz natywną metodę opis_roweru i wypisz dane z konstruktora
+
+#W nowym modul utworz klasę Osobowy(IPojzad, Silnik, Marka)
+#metoda pokaz_napęd ma zwracać opis: "silnik spalinowy"
+#metoda predkosc_max ma zwracać wartość wedłg następującego schematu:
+#dla pojemności <= 1.0 -> 140
+#dla pojemności <= 1.5 -> 170
+#dla pojemności <= 1.8 -> 190
+#dla pojemności <= 2.2 -> 210
+#dla pojemności <= 3.0 -> 240
+#dla pojemności > 3.0 -> większ niż 240
+#stwórz natywną metodę opis_samochodu i wypisz dane z konstruktora
+
+#KROK4
+#Zbuduj po jednej instancji (obiekcie) dla klas: Rower i Osobowy, użyj dla każdej z nich
+# dostępnych metod
